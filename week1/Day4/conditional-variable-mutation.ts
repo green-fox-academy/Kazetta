@@ -53,7 +53,7 @@ let out3: string = 'Run Forest Run!';
 
 if (d % 4 == 0 && time =< 200) {
     out3 = 'check'}
-if (time > 200) { 
+else if (time > 200) { 
     out3 = 'Time out'
 }
 
