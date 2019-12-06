@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+header {
+    background: #000;
+    width: 100%;
+    padding: 0px 0px;
+    border: 1px 1px;
+    border-color: #000000;
+    margin: 0px 0px;
+}
+
+body {
+    margin: 0px 0px;
+}
+
+header h1 {
+    color: white;
+    width: 70%;
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 p {
+    color:gray;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+        width: 70%;
+        margin: 10px auto;
+}
+
+article {
+    border: 1px solid rgb(216, 216, 216);
+    margin: 0px 0px 20px 0px;
+}
+
+article p {
+    margin: 15px 15px 20px 15px;
+    text-align: justify;
+}
+
+article h1 {
+    margin: 15px 15px 15px 13px;
+}
+
+.title p {
+    color: grey;
+}
+
+button {
+    background-color: lightgray;
+    border: 0px solid ;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.submit {
+    font-family: 'Roboto', sans-serif;
+}
