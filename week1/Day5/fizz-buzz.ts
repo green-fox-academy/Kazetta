@@ -5,8 +5,17 @@
 // and for the multiples of five print “Buzz”.
 // For numbers which are multiples of both three and five print “FizzBuzz”.
 
-let a: number = 0;
-while (a <= 100) {
-  console.log(a); // Prints the numbers from 0 to 9
-  a++;
+
+for (let i: number = 1; i <= 100; i++) {
+
+    if (i % 3 == 0 && i % 5 !== 0) {
+        console.log('Fizz');
+    } else if (i % 3 !== 0 && i % 5 == 0) {
+        console.log('Buzz');
+    } else if (i % 3 == 0 && i % 5 == 0) {
+        console.log('Fizzbuzz');
+    } else {
+        console.log(i)
+    }
+
 }
