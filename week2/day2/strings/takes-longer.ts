@@ -15,13 +15,8 @@ console.log(HofLaw);
 
 //console.log(letterArray);
 
-
-
-
 //let takesLonger: string = 'always takes longer than';
 //console.log(takesLonger); 
-
-
 
 //console.log(quote);
 
