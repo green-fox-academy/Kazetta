@@ -4,6 +4,10 @@
 
 'use strict';
 
-function printParams(n1:number) {
+let 
 
+function printParams(n1:number) {
+    return n1;
 } 
+
+console.log (printParams(valami));
