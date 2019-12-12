@@ -21,13 +21,13 @@ ctx.moveTo(350,250);
 ctx.lineTo(350,350);
 ctx.stroke();
 
-ctx.strokeStyle = 'red';
+ctx.strokeStyle = 'blue';
 ctx.beginPath();
 ctx.moveTo(350, 350);
 ctx.lineTo(250, 350);
 ctx.stroke();
 
-ctx.strokeStyle = 'green';
+ctx.strokeStyle = 'yellow';
 ctx.beginPath();
 ctx.moveTo(250,350);
 ctx.lineTo(250,250);
