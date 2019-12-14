@@ -6,6 +6,6 @@
 // Hello, Mary!
 // Hello, Joe!
 
-console.log('Hello Bence!');
-console.log('Hello Tomi!');
-console.log('Hello Noemi!');
+console.log('Hello, Noemi!');
+console.log('Hello, Bence!');
+console.log('Hello, Tomi!');
