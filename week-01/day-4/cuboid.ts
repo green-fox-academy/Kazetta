@@ -6,13 +6,15 @@
 // Surface Area: 600
 // Volume: 1000
 
-let a: number = 2;
-let b: number = 4;
-let c: number = 6;
+/*let a:number = ();
+let b:number = ();
+let c:number = ();*/
 
+//2*(front + side + top) = 600;
 
-let surface: number = (2 * (a * b)) + (2 * (c * b)) + (2 * (a * c));
-console.log('Surface Area:' + surface);
+let a:number = 2;
+let b:number = 4;
+let c:number = 6;
 
-let volume: number = (a * b * c);
-console.log('Volume:' + volume);
+console.log('Surface Area:', 2*(a + b + c));
+console.log('Volume:', a * b * c);
