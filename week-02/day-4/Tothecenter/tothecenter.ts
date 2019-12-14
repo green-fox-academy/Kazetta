@@ -22,3 +22,4 @@ function drawLine(xPos: number, yPos: number, color: string) {
   ctx.lineTo(200, 300);
   ctx.stroke();
 }
+

@@ -1,5 +1,14 @@
 'use strict';
 
+// Write a program that draws a
+// pyramid like this:
+//
+//    *
+//   ***
+//  *****
+// *******
+//
+// The pyramid should have as many lines as lineCount is
 
 let n = 5;
 let output = "";
@@ -17,13 +26,3 @@ for (let i = 0; i < n; i++) {
     console.log(myspace + output);
     output = "";
 }
-
-// Write a program that draws a
-// pyramid like this:
-//
-//    *
-//   ***
-//  *****
-// *******
-//
-// The pyramid should have as many lines as lineCount is
