@@ -5,4 +5,4 @@ let heightInM: number = 1.78;
 
 // Print the Body mass index (BMI) based on these values
 
-console.log(81.2 / (1.78 ** 2));
+console.log('BMI:', massInKg / (heightInM **2));
