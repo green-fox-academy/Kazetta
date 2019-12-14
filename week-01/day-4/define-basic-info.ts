@@ -1,4 +1,3 @@
-
 'use strict';
 
 // Define several things as a variable, then print their values
@@ -7,12 +6,12 @@
 // Your height in meters as a number
 // Whether you are married or not as a boolean
 
-let myname: string ='Barbara Toth';
-console.log(myname);
+let myName: string = ('Kazetta');
+let myAge:number = (26);
+let myHeight:number = (1.67);
+let marridgeStatus: boolean = false;
 
-let myage: number = 26;
-console.log(myage);
-
-let myheight: number = 1.67; 
-console.log(myheight + "m");
-
+console.log(myName);
+console.log(myAge);
+console.log(myHeight);
+console.log(marridgeStatus);
