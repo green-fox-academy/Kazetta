@@ -12,8 +12,11 @@
 
 // Print the remainder of 22 divided by 13
 
-console.log(22 + 13);
-console.log(22 - 13);
-console.log(22 * 13);
-console.log(22 / 13);
-console.log(22 % 13);
+let a:number = 22;
+let b:number = 13;
+
+console.log(a + b);
+console.log(b - a);
+console.log(a * b);
+console.log(a / b);
+console.log((a / b) / b);

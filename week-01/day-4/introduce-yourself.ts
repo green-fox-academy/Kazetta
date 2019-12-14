@@ -12,5 +12,5 @@
 //  1.87
 
 console.log('Kazetta');
-console.log('26');
-console.log('1.67');
+console.log(26);
+console.log(1.67);
