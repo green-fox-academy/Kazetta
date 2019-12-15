@@ -19,9 +19,8 @@ let number: number = 15;
 // 9 * 15 = 135
 // 10 * 15 = 150
 
+let xNumber:number = 15;
 
-for (let i: number = 1; i <= 10; i++) {
-    console.log(i + '*' + number + '=' + i * number); 
-  }
-
-  
+for (let i=1; i < 11; i++){
+ console.log(i + ' * ' + xNumber + ' = ' + i*xNumber)
+};
