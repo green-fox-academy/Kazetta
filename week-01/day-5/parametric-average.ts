@@ -4,16 +4,11 @@
 // Example input: 5
 // Example output: Sum: 15, Average: 3
 
+let i:number = 5;
+let output: number = 0;
 
-let limit: number = 5;
+for(let x = 1; x <= i; i++) {
+  output = output + i; 
+}
 
-
-let a: number = 0;
-
-for (let i: number = 1; i <= limit; i++ ) {
-    a = a + i; 
-  }
-
-console.log('Sum:' + a);  
-
-console.log('Average:' + a / limit);
+console.log("Sum: " + output + ', Average: ' + output/i);
