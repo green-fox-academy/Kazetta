@@ -22,8 +22,10 @@ constructor(backgroundColor: string, text: string, textColor: string) {
     }
 }
 
-let i1 = new PostIt("orange","pink","yellow");
-let i2 = new PostIt("Idea 1", "Awesome", "Superb!");
-let i3 = new PostIt("blue","black","green");
+let i1 = new PostIt("orange","Idea 1","blue");
+let i2 = new PostIt("pink", "Awesome", "black");
+let i3 = new PostIt("yello","Superb!","green");
 
 console.log(i1,i2,i3);
+
+export {PostIt}
