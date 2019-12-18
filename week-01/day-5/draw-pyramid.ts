@@ -21,8 +21,8 @@ for (let i = 0; i < n; i++) {
     }
     for (let j = 1; j <= 2 * i + 1; j++) {
         output += "*";
-
     }
     console.log(myspace + output);
     output = "";
 }
+
