@@ -6,7 +6,6 @@ let example: string = 'In a dishwasher far far away';
 // Please fix it for me!
 // Expected ouput: In a galaxy far far away
 
-//export = example;
+let starWars: string = example.replace('dishwasher','galaxy');
 
-console.log(example.replace('dishwasher','galaxy'));
-
+console.log(starWars);

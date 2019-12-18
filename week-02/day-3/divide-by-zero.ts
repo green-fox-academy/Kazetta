@@ -5,16 +5,17 @@
 // and prints the result.
 // It should print 'fail' if the parameter is 0
 
-function divide (number: number){
-    if (number === 0) {
-        throw Error ('error')
-    } else {
-        console.log(10/number);
+
+function divideByZero(num: number): void {
+    if (num === 0) {
+        throw new Error ('hujuj');
     }
+    let result:number = 10 / num;
+    console.log(result);
 }
 
 try {
-    divide(0);
-} catch (e){
-    console.log('hujujuj');
+    divideByZero(0);
+} catch (error) {
+    console.log('fail');
 }
