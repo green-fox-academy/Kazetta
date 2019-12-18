@@ -4,6 +4,7 @@
 
 let num: number = 10;
 let numbersUntilTen: number = sum(num);
+
 console.log(numbersUntilTen);
 
 function sum(until: number): number {
