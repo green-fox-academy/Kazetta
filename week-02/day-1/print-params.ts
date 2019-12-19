@@ -4,10 +4,10 @@
 
 'use strict';
 
-let 
+function printParams (input, ...otherInputs):void {
+    for (let i: number = 0; i < arguments.length; i++){
+        console.log(arguments[i]);
+    }
+}
 
-function printParams(n1:number) {
-    return n1;
-} 
-
-console.log (printParams(valami));
+printParams('askjdakjh', 2345, true);

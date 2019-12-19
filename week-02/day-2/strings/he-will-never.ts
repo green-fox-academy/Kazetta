@@ -17,6 +17,7 @@ let hashmap = {
     3: 'say goodbye '
 };
 console.log(hashmap[3]);
+
 //Object.keys(hashmap);
 //console.log(Object.values(hashmap));
 

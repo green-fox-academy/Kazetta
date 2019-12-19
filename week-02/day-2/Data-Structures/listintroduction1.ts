@@ -24,6 +24,28 @@ Amanda
 William
 Remove all elements */
 
-let allNames:string [ ] = [ ];
-console.log(allNames);
-allNames.splice(1,0,'William');
+'use strict';
+
+let names: string[] = [];
+names.push('William');
+names.push('John');
+names.push('Amanda');
+console.log(names);
+console.log(names[2]);
+
+names.forEach(function (element) {
+  console.log(element);
+});
+
+names.forEach(function (element, index) {
+  console.log(index + 1 + ". " + element);
+});
+
+names.splice(1, 1);
+
+for (let i: number = names.length - 1; i > -1; i--) {
+  console.log(names[i]);
+}
+
+names.splice(0);
+console.log(names);
