@@ -17,4 +17,3 @@ for (let i: number = numList.length-1; i >= 0; i--) {
 numList = [...reversedList];
 
 console.log(numList);
-
