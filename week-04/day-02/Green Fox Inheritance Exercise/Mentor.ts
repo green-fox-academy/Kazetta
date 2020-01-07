@@ -18,4 +18,4 @@ export class Mentor extends Person {
     }
 }
 
-let mentor = new Mentor("Jane Doe",30,"female","intermediate");
+let mentor1 = new Mentor("Jane Doe",30,"female","intermediate");
