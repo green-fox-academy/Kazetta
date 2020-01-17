@@ -63,7 +63,7 @@ class Carrier {
     };
 };
 
-let motherShip = new Carrier(2300, 5000);
+let motherShip = new Carrier();
 motherShip.add('F35');
 motherShip.add('F35');
 motherShip.add('F35');
