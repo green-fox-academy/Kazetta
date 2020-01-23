@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100px;
+    background: #cccccc ;
+  }
+  
+  .item {
+    align-self: flex-end;
+  }
+

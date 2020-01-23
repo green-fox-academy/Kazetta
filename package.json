@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/green-fox-academy/Kazetta#readme",
   "dependencies": {
-    "@types/node": "^12.12.17"
+    "@types/node": "^12.12.17",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
   }
 }
