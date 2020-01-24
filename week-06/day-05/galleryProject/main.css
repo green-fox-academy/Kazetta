@@ -1,0 +1,103 @@
+body {
+  background-image: linear-gradient(to bottom right, #117d82, #514564);
+  padding: 2em;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 0px;
+  flex: 1 100%;
+}
+
+.header {
+  background: #ffffff;
+}
+
+.footer {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tinyPic li{
+  display: inline-table;
+  list-style: none;
+  margin: 5px 15px 15px 15px;
+}
+
+.tinyPic img {
+  height: 40px;
+  width: 40px;
+  border: #ffffff 5px;
+  border-radius: 4px;
+}
+
+.main {
+  text-align: left;
+  height: 310px;
+  width: 800px;
+  object-fit: scale-down;
+  position: relative;
+  overflow: hidden;
+}
+
+.aside-1 {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.aside-2 {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.image {
+  width: 110%;
+  height: auto;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .header {
+    
+  }
+  
+  .main {
+    flex: 15 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+body {
+  padding: 100px;
+}
