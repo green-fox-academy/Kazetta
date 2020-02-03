@@ -13,7 +13,7 @@ title.innerHTML = "Go your own way";
 body.setAttribute("style", "background-color: Turquoise");
 
 mybutton.innerHTML = "This button do nothing at all";
-mybutton.setAttribute("style","font-family:monserrat;border-color:MidnightBlue ;color:Turquoise; padding: 16px; margin: 0.5% ; border-radius: 12px; font-size: 24px; background-color: MidnightBlue");
+mybutton.setAttribute("style","font-family: 'Roboto', sans-serif; font-weight: bold ;border-color:MidnightBlue ;color:Turquoise; padding: 15px; margin: 5% 0.5%; letter-spacing: 0.8px;border-radius: 12px; font-size: 24px; background-color: MidnightBlue");
 
 mybutton.onclick = () => {
     alert('I told you');
