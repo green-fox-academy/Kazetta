@@ -1,11 +1,14 @@
 'use strict';
 
+require('dotenv').config();
 const express = require('express');
 const app = express();
+const path = require('path');
 const PORT = 3000;
 const mysql = require('mysql');
+console.log(process.env.DBUSER);
 
-let conn = mysql.createConnection({
+const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'rigo',
@@ -43,7 +46,6 @@ app.get('/monika', (req, res) => {
             res.json(rows);
         });
 })
-
 
 
 app.listen(PORT);
