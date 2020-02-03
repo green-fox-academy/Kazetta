@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book List</title>
+  </head>
+  <body>
+    <main>
+      <% for(let i = 0; i < rows.length; i++){ %>
+      <ul>
+        <li>
+          Title: <%= rows[i].book_name %>
+        </li>
+        <li>
+          Written by: <%= rows[i].aut_name %>
+        </li>
+        <li>
+          Category: <%= rows[i].cate_descrip %>
+        </li>
+        <li>
+          Published by: <%= rows[i].pub_name %>
+        </li>
+        <li>
+          Price: <%= rows[i].book_price %>
+        </li>
+      </ul>
+      <% } %>
+    </main>
+  </body>
+</html>

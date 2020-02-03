@@ -6,13 +6,49 @@ const app = express();
 const path = require('path');
 const PORT = 3000;
 const mysql = require('mysql');
-console.log(process.env.DBUSER);
 
 const conn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'rigo',
-    database: 'bookstore',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
+});
+
+app.use(express.static('public'));
+app.set('viewengine', 'ejs');
+
+function filter(req) {
+    if (!req.query) {
+        return '';
+    } else {
+        let selection = `WHERE `;
+        if (req.query.category) {
+            selection += `cate_descrip = "${req.query.category}"`;
+        }
+        if (req.query.publisher) {
+            if (selector.length > 6) {
+                selection += ` AND `;
+            }
+            selection += `pub_name = "${req.query.publisher}"`;
+        }
+        if (req.query.plt) {
+            if (selection.length > 6) {
+                selection += ` AND `
+            }
+            selection += `book_price > ${req.query.pgt}`;
+        }
+        return selection;
+    }
+};
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + 'index.html'))
+});
+
+app.get('/books', (req, res) => {
+    let databaseFilter = filter(req);
+    let tables = `author JOIN book_mast ON author.aut_id = book_mast.aut_id JOIN category ON book_mast.cate_id = category.cate_id JOIN newpubliser ON book_mast.pub_id = newpublisher.pub_id`;
+    let databaseQuery = `SELECT book_name, aut_name, cate_descrip, pub_name, book_price FROM ${tables} ${databaseFilter}`;
 });
 
 conn.connect((err) => {
@@ -23,29 +59,13 @@ conn.connect((err) => {
     console.log('Connection established');
 });
 
-app.get('/books', (req, res) => {
-    conn.query('SELECT book_name FROM book_mast;', function (err, rows) {
-        res.send(rows);
-    });
-})
-
-//http://localhost:3000/monika?category=science
-app.get('/monika', (req, res) => {
-    let category = `${req.query.category}`;
-    conn.query(
-    `SELECT book_name, author.aut_name, category.cate_descrip, publisher.pub_name, book_price
-    FROM book_mast
-    INNER JOIN category
-    ON category.cate_id = book_mast.cate_id
-    INNER JOIN publisher
-    ON publisher.pub_id = book_mast.pub_id
-    INNER JOIN author
-    ON author.aut_id = book_mast.aut_id
-    WHERE category.cate_descrip = ${JSON.stringify(category)};`,
-        (err, rows) => {
-            res.json(rows);
-        });
-})
+conn.query(databaseQuery, (err, rows) => {
+    res.render('booklists.ejs', {
+      rows: rows
+    })
+});
 
 
-app.listen(PORT);
+app.listen(PORT, () => {
+    console.log(`Bookstore app listening on port ${PORT} `)
+});
