@@ -3,6 +3,7 @@
 let posX = 0;
 let posY = 0;
 let size = 1000;
+
 const navigation = (event) => {
     let direction = event.target.dataset.direction;
     let inspector = document.querySelector('.img-inspector');
