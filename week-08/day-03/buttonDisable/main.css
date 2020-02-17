@@ -1,0 +1,58 @@
+.container {
+  position: center;
+  background-color: white;
+  width: 500px;
+  height: auto;
+  margin: 50px;
+  padding: 10px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+body {
+  background-color: lightsteelblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons {
+  width: auto;
+  height: auto;
+  padding: 30px 20px 0px 0px;
+  transition-duration: 0.4s;
+}
+
+form {
+  width: auto;
+  height: auto;
+  padding: 0px 2px 2px 0px;
+}
+
+button {
+  height: auto;
+  width: auto;
+  padding: 10px 15px;
+  font-weight: bold;
+  background-color: darkslateblue;
+  border: 0px;
+  color: rgb(245, 251, 255);
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  border: 1px solid darkslateblue;
+  padding: auto;
+  margin: 3px;
+}
+
+button:hover {
+  background-color:white;
+  color: darkslateblue;
+  border: 1px solid darkslateblue;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
